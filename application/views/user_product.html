@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>用户商品登记</title>
+    <link rel="stylesheet" href="../styles/css/common_style.css"/>
+    <link rel="stylesheet" href="../styles/css/user_product.css"/>
+
+    <script src="../components/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+
+<section class="page_main">
+    <h1 class="sign-title">商品登记</h1>
+    <form class="sign-form" enctype="multipart/form-data" method="post" action="">
+        <ul>
+            <li class="required"><span>卖家：</span><input type="text" required="required" name="seller"/></li>
+            <li class="required"><span>品牌：</span><input type="text" required="required" name="brand"/></li>
+            <li class="required"><span>型号：</span><input type="text" required="required" name="model"/></li>
+            <li class="required"><span>拟售物价格：</span><input type="text" required="required" name="seller"/></li>
+            <li><span>原购价格：</span><input type="text" name="seller"/></li>
+            <li><span>原产地：</span><input type="text" name="origin"/></li>
+            <li class="required"><span>新旧程度：</span><input type="text" required="required" name="new"/></li>
+            <li><span>是否维修过：</span><input type="text" name="repair"/></li>
+            <li><span>是否过拆机：</span><input type="text" name="remove"/></li>
+            <li><span>原产地：</span><input type="text" name="origin"/></li>
+            <li>
+                <span>商品转手次数：</span>
+                <select name="transfer">
+                    <option value="1">1次</option>
+                    <option value="2">2次</option>
+                    <option value="unknown">未知</option>
+                </select>
+            </li>
+            <li class="required"><span>商品详细描述：</span><input type="text" required="required" name="detail"/></li>
+            <li><span>发货到体验店：</span><input type="text" name="send"/></li>
+            <li><span>快递物流：</span><input type="text" name="express"/></li>
+            <li><span>运单号码：</span><input type="text" name="number"/></li>
+            <li><span>联系人：</span><input type="text" name="contact"/></li>
+            <li><span>联系电话：</span><input type="text" name="tel"/></li>
+            <li><span>收款方式：</span><input type="text" name="way"/></li>
+        </ul>
+
+        <section class="img-upload">
+            <div class="img-show">
+                <div class="img-big-show">预览图</div>
+            </div>
+            <div class="img-add">
+                <p>最多支持上传X张图片。图片格式为jpg/png/ bmp，大小不超过2M。</p>
+                <ul>
+                    <li><div class="thumb_show"></div> <label><input type="file" name="img1"/> </label></li>
+                    <li><div class="thumb_show"></div><label><input type="file" name="img2"/> </label></li>
+                    <li><div class="thumb_show"></div><label><input type="file" name="img3"/> </label></li>
+                    <li><div class="thumb_show"></div><label><input type="file" name="img4"/> </label></li>
+                    <li><div class="thumb_show"></div><label><input type="file" name="img5"/> </label></li>
+                    <li><div class="thumb_show"></div><label><input type="file" name="img6"/> </label></li>
+                </ul>
+            </div>
+
+            <div class="example">
+                <h2>示例图片</h2>
+                <div class="example-img">
+                    <img src="../images/user_product_1.jpg"/>
+                    <img src="../images/user_product_2.jpg"/>
+                </div>
+
+            </div>
+
+            <input type="submit" class="submit-form" value="提&nbsp;交"/>
+        </section>
+    </form>
+</section>
+
+<script src="../components/Validform_v5.3.2_min.js"></script>
+<script src="../scripts/user_product.js"></script>
+</body>
+</html>

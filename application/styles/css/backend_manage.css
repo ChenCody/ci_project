@@ -1,0 +1,175 @@
+body{
+    background-color: #0d64b6;
+}
+input {
+    border: 0;
+}
+button {
+    background-color: #fff;
+    border: 0;
+    margin-left: 10px;
+    outline: 0;
+    height: 22px;
+    width: 56px;
+    cursor: pointer;
+
+}
+button.delete {
+    background-color: rgb(13,100,182);
+    color: #fff;
+}
+.back-end {
+    width: 960px;
+    min-height: 600px;
+    margin: 40px auto;
+    color: #fff;
+    font-size: 18px;
+}
+
+.back-end-tab{
+    float: left;
+    width: 120px;
+    height: auto;
+
+}
+.back-end-tab li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.back-end-tab li.active {
+    background-color: #569cdd;
+}
+.tab-body{
+    float: right;
+    width: 840px;
+    min-height: 540px;
+    padding: 20px;
+    background-color: #569cdd;
+    box-sizing: border-box;
+}
+
+/* 子页面样式 */
+label{
+    display: block;
+    margin: 20px 10px;
+    width: 360px;
+    height: 20px;
+}
+label input{
+    float: right;
+    width: 200px;
+    height: 20px;
+}
+
+.submit-button {
+    display: block;
+    width: 60px;
+    height: 32px;
+    margin: 20px;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 22px;
+    background-color: #269abc;
+}
+.product-manage,
+.order-manage,
+.article-manage {
+    background-color: #fff;
+    width: 800px;
+}
+table {
+   width: 800px;
+    word-break: break-all;
+    color: #333;
+    font-size: 14px;
+}
+table td,th{
+    text-align: center;
+}
+.col-1 {
+    width: 30%;
+}
+input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+}
+.data-solve{
+    overflow: hidden;
+    border-top: 1px solid #232323
+}
+.delete-select {
+    float: left;
+    width: 200px;
+    margin-left: 20px;
+    color: #333;
+    font-size: 14px;
+}
+.search {
+    float: right;
+    width: 300px;
+}
+.search-input {
+    background-color: #c5ddf3;
+}
+/* 用户搜索 */
+.user-search{
+    float: right;
+}
+.user-manage label {
+    width: 400px;
+}
+
+.user-manage button {
+    border: 1px solid #333;
+}
+.user-manage table {
+    background-color: #fff;
+}
+
+/* 订单管理 */
+.order-manage .col-1{
+    width: 20%;
+}
+.order-manage .col-2 {
+    width: 35%;
+}
+.order-manage .col-3 {
+    width: 15%;
+}
+.order-manage .col-4 {
+    width: 15%;
+}
+
+/* 图片管理 */
+.img-list{
+    width: 800px;
+    overflow: hidden;
+}
+.img-list .img-here {
+    width: 140px;
+    height: 140px;
+    background-color: #ddd;
+}
+.img-list li {
+    float: left;
+    width: 140px;
+    margin: 0 40px 30px 0;
+    text-align: center;
+
+}
+
+/* 数据库 */
+.data-manage button{
+    width: 100px;
+    height: 40px;
+}
+
+/* 支付方式 */
+.pay-method label{
+    width: 160px;
+}
+.pay-method input[type=radio]{
+    width: 20px;
+}

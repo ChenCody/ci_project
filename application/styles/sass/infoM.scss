@@ -1,0 +1,96 @@
+@import 'tablet_common';
+body{
+  margin: 0;
+  overflow-x: hidden;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+.cart_list{
+  margin:10px 0;
+
+  li{
+    position: relative;
+    left: 0;
+    margin: 15px 0;
+    padding:0 10%;
+    width: 80%;
+    height: 100px;
+    transition: left 0.4s ease-in-out;
+    -webkit-transition: left 0.4s ease-in-out;
+    @media #{small} {
+      height: 120px;
+    }
+    @media #{big} {
+      height: 160px;
+    }
+    .check_input{
+      display: none;
+    }
+    .check{
+      position: absolute;
+      top:50%;
+      bottom: 50%;
+      left: 5px;
+      width: 20px;
+      height: 20px;
+      margin-top:auto;
+      margin-bottom: auto;
+      background:url("../../images/checkbox.png");
+      -webkit-background-size: 20px 20px;
+      background-size: 20px 20px;
+    }
+    .check_input:checked~label{
+      background: url("../../images/checkbox_checked.png");
+      -webkit-background-size: 20px 20px;
+      background-size: 20px 20px;
+    }
+    .img{
+      float: left;
+      width: 120px;
+      height: 100%;
+      background-color: #939192;
+    }
+    .right{
+      width: 100%;
+      height: 100%;
+      font: 16px 'microsoft yahei';
+      .detail{
+        position: relative;
+        height: 100%;
+        margin-left: 130px;
+        .price{
+          position: absolute;
+          left: 0;
+          bottom: 4px;
+          color: #a03a38;
+        }
+        .num{
+          position: absolute;
+          right: 4px;
+          bottom: 4px;
+        }
+      }
+    }
+    .delete_bottom{
+      position: absolute;
+      top:0;
+      right: -50px;
+      width: 50px;
+      height: 100%;
+      background-color: #a13a38;
+      img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 30px;
+        height: 30px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
