@@ -1,0 +1,81 @@
+.user_head {
+  width: 100%;
+  height: 240px;
+  background-color: #545454;
+  font-family: 'microsoft yahei';
+  color: #fff; }
+  .user_head h1 {
+    width: 300px;
+    height: 60px;
+    margin: 0 0 10px;
+    font-size: 46px; }
+  .user_head .user_info {
+    position: relative;
+    width: 100%;
+    height: 160px; }
+    .user_head .user_info .user_avatar {
+      float: left;
+      width: 160px;
+      height: 160px;
+      margin-right: 10px;
+      background-color: #921e1e; }
+    .user_head .user_info span {
+      position: absolute;
+      font-size: 32px;
+      bottom: 4px; }
+    .user_head .user_info .user_banner {
+      position: absolute;
+      top: 30px;
+      right: 80px;
+      font-size: 24px; }
+
+.user_tab {
+  width: 100%;
+  height: 40px;
+  background-color: #7a7a7a;
+  font-size: 24px;
+  color: #fff; }
+  .user_tab li {
+    float: left;
+    width: 16.66%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center; }
+    .user_tab li a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      color: #fff; }
+
+.tab_content {
+  width: 100%; }
+  .tab_content ul {
+    position: relative;
+    margin: 26px;
+    height: 300px; }
+    .tab_content ul li {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto; }
+      .tab_content ul li:first-child {
+        display: list-item; }
+      .tab_content ul li table {
+        width: 100%;
+        vertical-align: top; }
+        .tab_content ul li table .row1 {
+          width: 170px; }
+        .tab_content ul li table .row2 {
+          font-size: 20px; }
+        .tab_content ul li table th {
+          font-size: 28px;
+          color: #fff;
+          font-weight: normal;
+          vertical-align: top; }
+        .tab_content ul li table td {
+          color: #e76969;
+          font-size: 20px; }
+        .tab_content ul li table tr {
+          height: 50px; }

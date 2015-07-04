@@ -1,0 +1,24 @@
+.page_main .logo {
+  width: 220px;
+  height: 50px;
+  margin-bottom: 60px;
+  background-color: #fff; }
+.page_main .img_ad {
+  width: 1150px;
+  height: auto;
+  margin-bottom: 110px;
+  overflow: hidden; }
+  .page_main .img_ad .img_left {
+    float: left;
+    width: 50%;
+    height: 350px;
+    background-color: #e5e4e4; }
+  .page_main .img_ad .img_right {
+    float: right;
+    width: 48%;
+    height: auto; }
+    .page_main .img_ad .img_right > div {
+      width: 100%;
+      height: 230px;
+      margin-bottom: 8px;
+      background-color: #e5e4e4; }

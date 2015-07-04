@@ -1,0 +1,57 @@
+body {
+  margin: 0; }
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 370px;
+  background-color: #939292; }
+  .carousel .carousel-inner {
+    width: 100%;
+    height: 100%; }
+    .carousel .carousel-inner > div {
+      width: 100%;
+      height: 100%; }
+      .carousel .carousel-inner > div:first-child {
+        background-color: red; }
+      .carousel .carousel-inner > div:nth-child(2) {
+        background-color: green; }
+      .carousel .carousel-inner > div:last-child {
+        background-color: blue; }
+
+.title_bar {
+  margin-bottom: 25px;
+  height: 63px;
+  background: -webkit-linear-gradient(left, #921e1e, white); }
+
+.area_1 {
+  margin: 25px 0 0 0; }
+  .area_1 .pic_area {
+    overflow: hidden; }
+    .area_1 .pic_area > div {
+      background-color: #939292; }
+    .area_1 .pic_area .left {
+      float: left;
+      width: 44%;
+      margin: 0 4%;
+      height: 600px; }
+    .area_1 .pic_area .right_top {
+      width: 44%;
+      height: 300px;
+      margin-left: 52%;
+      margin-bottom: 20px; }
+    .area_1 .pic_area .right_bottom {
+      width: 44%;
+      height: 280px;
+      margin-left: 52%; }
+
+.area_2 {
+  margin: 25px 0 0 0; }
+  .area_2 .pic_area {
+    overflow: hidden; }
+    .area_2 .pic_area > div {
+      float: left;
+      width: 29%;
+      height: 280px;
+      margin: 0 2%;
+      background: #939292; }

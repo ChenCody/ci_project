@@ -1,0 +1,135 @@
+.sign-title{
+  margin: 0 16px;
+  font-size: 62px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.sign-form{
+  margin: 14px 16px 0;
+
+  >ul{
+    float: left;
+    width: 420px;
+
+    li{
+      position: relative;
+      width: 100%;
+      height: 28px;
+      margin: 0 0 10px 0;
+      color: #fff;
+      font-size: 18px;
+
+      input,select{
+        float: right;
+        width: 260px;
+        height: 90%;
+        font-size: 1em;
+        border: 0;
+        background-color: #E5E4E4;
+      }
+    }
+  }
+
+
+  .required:before{
+    content: '*';
+    position: absolute;
+    top: 4px;
+    left: -14px;
+    color: #ff0000;
+  }
+
+
+
+
+}
+
+.img-upload{
+  float: right;
+  width: 600px;
+}
+.img-show{
+  float: left;
+  position: relative;
+  width: 400px;
+  height: 280px;
+  background-color: #fff;
+
+  .delete{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 34px;
+    background:url(../../images/user_product_4.png) rgba(47,47,47,0.5) no-repeat 96% center;
+  }
+}
+.img-add{
+  float: right;
+  width: 180px;
+
+  p{
+    margin: 0;
+    color: #fff;
+    font-size: 16px;
+  }
+  ul{
+    margin: 14px 0 0 ;
+
+
+  }
+  li{
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    background: url(../../images/user_product_3.jpg) no-repeat center;
+    background-size: 100% 100%;
+    &:nth-child(2n+1){
+      margin-right: 16px;
+    }
+
+    label{
+      display: block;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+
+    input[type=file]{
+      display: none;
+    }
+  }
+}
+
+.example{
+  clear: both;
+
+  h2{
+    padding: 16px 0 10px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #fff;
+  }
+  .example-img img{
+    width: 240px;
+    height: 180px;
+
+    &:first-child{
+      margin-right: 26px;
+    }
+  }
+}
+
+.submit-form{
+  width: 100px;
+  height: 36px;
+  margin: 60px 70px 0;
+  background-color: #921E1E;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  color: #fff;
+
+}
