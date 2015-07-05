@@ -4,11 +4,16 @@
 
 $(function(){
     var body = $('body');
+    var sign_up=$('.sign_up');
+    var log_in=$('.log_in');
     /* sign up */
     body.delegate('.sign_up_footer','click',function() {
-        var sign_up=$('.sign_up');
+
         if(sign_up.hasClass('hide')){
             sign_up.removeClass('hide');
+        }
+        if(!log_in.hasClass('hide')) {
+            log_in.addClass('hide');
         }
     })
     $('.sign_up_button').on('click',function(){
@@ -20,13 +25,19 @@ $(function(){
         },function(data){
             alert(data)
         })
+    });
+    $('.join_us').on('click',function(){
+        $('.log_in_footer').trigger('click')
     })
     
     /* log in */
     body.delegate('.log_in_footer','click',function() {
-        var log_in=$('.log_in');
+
         if(log_in.hasClass('hide')){
             log_in.removeClass('hide');
+        }
+        if(!sign_up.hasClass('hide')){
+            sign_up.addClass('hide')
         }
     });
     $('.log_in_button').on('click',function(){
@@ -44,5 +55,10 @@ $(function(){
             })
         }
 
+    })
+
+    /*close */
+    $('.close').on('click',function(){
+        $(this).parent().addClass('hide')
     })
 });

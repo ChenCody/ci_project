@@ -74,6 +74,17 @@ footer {
   -moz-box-shadow: 0 0 10px #fff;
   box-shadow: 0 0 10px #fff;
 }
+.close{
+  display: block;
+  position: absolute;
+  right: 0;
+  top:0;
+  width: 20px;
+  height: 20px;
+  font-size: 22px;
+  text-align: center;
+  cursor: pointer;
+}
 div.log_in {
   height: 500px;
 }
