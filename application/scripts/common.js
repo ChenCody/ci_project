@@ -3,8 +3,9 @@
  */
 
 $(function(){
+    var body = $('body');
     /* sign up */
-    $('.sign_up_footer').on('click',function() {
+    body.delegate('.sign_up_footer','click',function() {
         var sign_up=$('.sign_up');
         if(sign_up.hasClass('hide')){
             sign_up.removeClass('hide');
@@ -22,7 +23,7 @@ $(function(){
     })
     
     /* log in */
-    $('.log_in_footer').on('click',function() {
+    body.delegate('.log_in_footer','click',function() {
         var log_in=$('.log_in');
         if(log_in.hasClass('hide')){
             log_in.removeClass('hide');
