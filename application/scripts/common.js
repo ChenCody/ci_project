@@ -16,8 +16,8 @@ $(function(){
                 user_namr:$('.sign_up .user_input').val(),
                 user_psw:$('.sign_up .user_psw').val()
             }
-        },function(){
-
+        },function(data){
+            alert(data)
         })
     })
     
@@ -38,8 +38,8 @@ $(function(){
                     user_psw:user_psw,
                     user_email:$('.log_in .user_mail').val()
                 }
-            },function(){
-
+            },function(data){
+                alert(data)
             })
         }
 
