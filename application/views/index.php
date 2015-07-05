@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>主页</title>
-    <link rel="stylesheet" href="../styles/css/common_style.css"/>
-    <link rel="stylesheet" href="../styles/css/index.css"/>
-    <script src="../components/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="application/styles/css/common_style.css"/>
+    <link rel="stylesheet" href="application/styles/css/index.css"/>
+    <script src="application/components/jquery-1.11.1.min.js"></script>
 </head>
 <body>
 <section class="page_main">
@@ -23,6 +23,6 @@
 </section>
 
 
-<script src="../scripts/main.js"></script>
+<script src="application/scripts/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,125 @@
+@import "common_style";
+
+.page_main{
+  .title_bar{
+    width:100%;
+    height:120px;
+    @extend .test_color;
+  }
+  .list{
+    width:100%;
+    height: auto;
+    overflow: hidden;
+
+    .aList{
+      float: left;
+      width: 29%;
+      height: 380px;
+      margin:20px 2%;
+
+      .img{
+        width: 100%;
+        height:180px;
+        margin: 0;
+        padding: 0;
+        @extend .test_color;
+      }
+      .describe{
+        width: 100%;
+        height: 140px;
+        margin-top: 6px;
+        font:20px 'Î¢ÈíÑÅºÚ';
+        color:#fff;
+        line-height: 36px;
+      }
+    }
+  }
+}
+
+.mall_nav{
+  position: fixed;
+  bottom: 62px;
+  left: 0;
+  right: 0;
+  width: 1230px;
+  height: 32px;
+  margin:0 auto;
+  background-color: #6c1717;
+
+  .nav_list{
+    float: left;
+    width: 64%;
+    height: 100%;
+    margin-left: 90px;
+    color: #fff;
+    font:20px 'microsoft yahei';
+
+    >li{
+      position: relative;
+      float: left;
+      width: 25%;
+      height: 100%;
+      line-height: 32px;
+      a{
+        display: block;
+        height: 100%;
+        width: 100%;
+        color: #fff;
+      }
+      span{
+        float: left;
+      }
+      div{
+        float: left;
+        width: 20px;
+        height: 20px;
+        margin-top: 6px;
+        margin-left: 10px;
+        text-align: center;
+        line-height: 6px;
+        img{
+          width: 80%;
+          height: 80%;
+        }
+      }
+
+    }
+  }
+}
+.tab-list{
+  position:absolute;
+  bottom: 32px;
+  left: -40px;
+  width: 600px;
+  height: 340px;
+  background-color: rgba(146,30,30,0.7);
+  li{
+    float: left;
+    width: 30%;
+    height: 30px;
+    margin-left: 3.33%;
+  }
+  a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+  }
+
+}
+.search_box{
+  float: right;
+  width: 160px;
+  height: 24px;
+  margin: 4px 70px 4px 0;
+  input{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    text-indent: 6px;
+  }
+}
+

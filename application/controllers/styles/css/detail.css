@@ -1,0 +1,143 @@
+.test_color, .page_main > nav, .page_main .carousel_space .aPiece {
+  background-color: #e5e4e4; }
+
+body {
+  margin: 0;
+  background-color: #921e1e; }
+
+.page_main {
+  width: 1150px;
+  height: auto;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #2f2f2f; }
+  .page_main > nav {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    width: 1230px;
+    height: 40px;
+    margin: 0 auto; }
+
+footer {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 1150px;
+  height: 40px;
+  background-color: #6c1717; }
+
+.hide {
+  display: none; }
+
+.page_main .carousel_space {
+  position: relative;
+  width: 950px;
+  height: 243px;
+  margin: 0 auto;
+  background-color: #fff;
+  overflow: hidden; }
+  .page_main .carousel_space .left_bar, .page_main .carousel_space .right_bar {
+    position: absolute;
+    top: 80px;
+    width: 52px;
+    height: 78px;
+    z-index: 2;
+    cursor: pointer; }
+  .page_main .carousel_space .main_space {
+    width: 100%;
+    height: 100%; }
+.page_main .carousel_space .main_space img{
+  width: 100%;
+  height: 100%;
+}
+  .page_main .carousel_space .left_bar {
+    left: 200px; }
+  .page_main .carousel_space .right_bar {
+    right: 200px; }
+  .page_main .carousel_space .aPiece {
+    position: absolute;
+    display: none;
+    top: 0;
+    width: 350px;
+    height: 243px;
+    -webkit-transition: left 0.4s ease-in-out;
+    transition: left 0.4s ease-in-out; }
+  .page_main .carousel_space .active {
+    display: block;
+    left: 300px; }
+  .page_main .carousel_space .next {
+    display: block;
+    left: 700px; }
+  .page_main .carousel_space .next_next {
+    display: block;
+    left: 1100px; }
+  .page_main .carousel_space .before {
+    display: block;
+    left: -100px; }
+  .page_main .carousel_space .before_before {
+    display: block;
+    left: -500px; }
+.page_main .carousel_describe {
+  margin: 16px 0;
+  text-align: center;
+  color: #fff;
+  font: 20px 'Microsoft Yahei'; }
+.page_main .detail_space {
+  width: 100%;
+  height: 320px;
+  margin: 0; }
+  .page_main .detail_space .tab_space {
+    width: 100%;
+    height: 26px; }
+    .page_main .detail_space .tab_space > div {
+      position: relative;
+      width: 150px;
+      height: 26px;
+      font-family: 'Microsoft Yahei';
+      background-color: #5d5c5c;
+      line-height: 26px;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out; }
+      .page_main .detail_space .tab_space > div:not([class~='active']):hover {
+        background-color: #c3c2c2; }
+    .page_main .detail_space .tab_space .left_tab {
+      float: left; }
+      .page_main .detail_space .tab_space .left_tab:after {
+        content: '\00a0';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-width: 13px 7px;
+        border-style: solid;
+        border-color: #2f2f2f #2f2f2f transparent transparent; }
+    .page_main .detail_space .tab_space .right_tab {
+      float: right; }
+      .page_main .detail_space .tab_space .right_tab:after {
+        content: '\00a0';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-width: 13px 7px;
+        border-style: solid;
+        border-color: #2f2f2f transparent transparent #2f2f2f; }
+    .page_main .detail_space .tab_space .active {
+      background-color: #E5E4E4; }
+  .page_main .detail_space .text {
+    width: 100%;
+    height: 300px; }
+    .page_main .detail_space .text > div {
+      width: 100%;
+      height: 280px;
+      padding: 10px 0;
+      background-color: #e5e4e4; }
