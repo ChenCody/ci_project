@@ -24,6 +24,7 @@ body {
   overflow: hidden;
   background-color: #2f2f2f; }
 
+/* footer style */
 footer {
   position: fixed;
   bottom: 20px;
@@ -42,7 +43,7 @@ footer {
     color: #ffffff; }
     footer ul li {
       float: left;
-      width: 16.66%;
+      width: 12.4%;
       height: 100%; }
       footer ul li a {
         display: block;
@@ -53,4 +54,96 @@ footer {
         color: #fff; }
 
 .hide {
-  display: none; }
+  display: none;
+}
+/* sign in & sign up style */
+.sign_up,
+.log_in {
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  height: 250px;
+  margin: auto;
+  padding: 20px 50px;
+  color: #fff;
+  background-color: #585858;
+  -webkit-box-shadow: 0 0 10px #fff;
+  -moz-box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 10px #fff;
+}
+div.log_in {
+  height: 500px;
+}
+.sign_up h1,
+.log_in h1{
+  font-size: 18px;
+  margin: 24px 0 34px;
+  text-align: center;
+}
+.sign_up label,
+.log_in label{
+  display: block;
+
+  width: 290px;
+  font-size: 16px;
+  margin-top: 14px;
+  overflow: hidden;
+}
+.sign_up label>span,
+.log_in label>span{
+  display: block;
+  float: left;
+  width: 90px;
+}
+.sign_up input,
+.log_in input{
+  float: left;
+  width: 190px;
+  height: 22px;
+  border: 0;
+  outline: 0;
+  text-indent: 5px;
+  border-radius: 11px;
+}
+.sign_up .about_psw {
+  margin:10px 0 20px 100px;
+
+}
+.about_psw a{
+  color: #fff;
+  font-size: 14px;
+}
+.sign_up_button,
+.log_in_button{
+  display: block;
+  width: 100px;
+  height: 50px;
+  margin:20px auto;
+  font-size: 24px;
+  background-color: #2f2f2f;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.log_in .agreement h1 {
+  font-size: 14px;
+  margin:2px auto;
+
+}
+.log_in .agreement {
+  width: 100%;
+  height: 180px;
+  margin:20px auto;
+  padding: 12px 20px;
+  overflow: scroll;
+  color: #444;
+  font-size: 14px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
