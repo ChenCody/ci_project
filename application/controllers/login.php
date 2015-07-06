@@ -6,13 +6,20 @@ class Login extends CI_Controller {
 	}
 	public function index()
 	{
-		$this->load->model('login_check','check');
-		$data=$this->input->post('data');
+		session_start();
+		$this->load->model('common','check');
+		$data=$this->input->post('data',TRUE);
 		$password=$data['user_psw'];
 		$username=$data['user_namr'];
-		$flag=$this->check->check($username,$password);
+		$flag=$this->check->logincheck($username,$password);
 		if ($flag)
 		{
+			$random=rand(10000000,90000000);
+			$authkey=md5($random);
+			$this->input->set_cookie("username",$username,3600);
+			$this->input->set_cookie("auth",$authkey,3600);
+			$_SESSION['authkey'] = $authkey;
+			$_SESSION['username'] = $username;
 			echo '登录成功';
 		}
 		else

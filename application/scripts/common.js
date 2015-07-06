@@ -26,7 +26,8 @@ $(function(){
             alert(data)
             if(data=="登录成功")
             {
-                window.location="../index.php/ucenter";
+                var user_namr=$('.sign_up .user_input').val();
+                window.location="../index.php/ucenter/name/"+user_namr;
             }
         })
     });
@@ -45,17 +46,44 @@ $(function(){
         }
     });
     $('.log_in_button').on('click',function(){
-        var user_psw =$('.log_in .user_psw').val();
-
-        if(user_psw===$('.log_in .repeat_psw').val()){
-            $.post('xxx.php',{
+        var user_psw =$('#password').val();
+        var retype=$('#retype').val();
+        var user_namr=$('.log_in .user_input').val();
+        var user_email=$('#email').val();
+        if(!user_namr)
+        {
+            alert('请输入用户名');
+        }
+        else if(!user_psw)
+        {
+            alert('请输入密码');
+        }
+        else if(!retype)
+        {
+            alert('请再次输入您的密码');;
+        }
+        else if(!user_email)
+        {
+            alert('请输入您的邮箱');;
+        }
+        else if(user_psw!=retype)
+        {
+            alert('两次输入的密码不一致');
+        }
+        else
+        {
+            $.post('../index.php/register',{
                 data:{
-                    user_namr:$('.log_in .user_input').val(),
+                    user_namr:user_namr,
                     user_psw:user_psw,
-                    user_email:$('.log_in .user_mail').val()
+                    user_email:user_email
                 }
             },function(data){
                 alert(data)
+                if(data=="注册成功,请进行登录")
+                {
+                    location=location;
+                }
             })
         }
 
