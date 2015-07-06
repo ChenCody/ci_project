@@ -24,6 +24,6 @@
 
 
 <script src="application/scripts/main.js"></script>
-<script src="application/scipts/common.js"></script>
+<script src="application/scripts/common.js"></script>
 </body>
 </html>

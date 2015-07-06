@@ -17,13 +17,17 @@ $(function(){
         }
     })
     $('.sign_up_button').on('click',function(){
-        $.post('xxx.php',{
+        $.post('../index.php/login',{
             data:{
                 user_namr:$('.sign_up .user_input').val(),
-                user_psw:$('.sign_up .user_psw').val()
+                user_psw:$("[name='user_psw']").val()
             }
         },function(data){
             alert(data)
+            if(data=="登录成功")
+            {
+                window.location="../index.php/ucenter";
+            }
         })
     });
     $('.join_us').on('click',function(){
