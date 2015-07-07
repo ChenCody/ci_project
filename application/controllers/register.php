@@ -30,7 +30,7 @@ public function __construct()
 		$flag=$this->register->register($username,$password,$email);
 		if ($flag)
 		{
-			echo '注册成功,请进行登录';
+			echo '注册成功,请重新登录';
 		}
 		else
 		{

@@ -14,7 +14,7 @@
         <h1>个人中心</h1>
         <div class="user_info">
             <div class="user_avatar"></div>
-            <span>用户昵称</span>
+            <span><?php echo $username?></span>
             <div class="user_banner"><a style="color:#000" href="../../../../index.php/ucenter/logout">点此退出</a></div>
         </div>
     </div>
@@ -34,7 +34,7 @@
                     <colgroup class="row2"></colgroup>
                     <tr>
                         <th>我的音特币：</th>
-                        <td>0</td>
+                        <td><?php echo $intercoin ?></td>
                     </tr>
                     <tr>
                         <th>我的订单：</th>
@@ -52,8 +52,12 @@
             <li>内容2asdsadasdasdasdas</li>
             <li>内容312321312321wqeqweqweqw</li>
             <li>内容4sadasdasdasdasd</li>
-            <li>内容5wqewqeqweqwe</li>
-            <li>内容6qweqweqweqweqwe</li>
+            <li><p style="color:#e5e4e4;font-size:36px">音特币:<?php echo $intercoin?></p><a style="color:#ff0000;font-size:26px" href="../../../../index.php/ucenter/intercoin">点此充值</a></li>
+            <li><p style="color:#e5e4e4;font-size:25px">我的订单信息</p>
+                <!-- 这里放订单信息,后面要加上一个删除的功能 -->
+                <hr>
+                <a style="color:#e76969;font-size:18px" href="../../../../index.php/ucenter/addproduct">点此新增商品</a>
+            </li>
         </ul>
     </div>
 </section>

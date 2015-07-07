@@ -35,7 +35,30 @@ class Ucenter extends CI_Controller {
 		session_start();
 		$this->check();
 		$username=$_SESSION['username'];
-		$data=array();
-		$this->load->view('User_center.html');
+		$this->load->model('common','get');
+		$result=$this->get->get($username);
+		$data['username']=$username;
+		$data['email']=$result->email;
+		$data['intercoin']=$result->intercoin;
+		$data['headpic']=$result->headpic;
+		$this->load->view('User_center.html',$data);
+	}
+	public function addproduct()
+	{
+		session_start();
+		$this->check();
+		$username=$_SESSION['username'];
+		$this->load->model('common','addproduct');
+		//中间是放调用模型的地方
+		//结束
+		$this->load->view('User_product.html');
+	}
+	public function logout()
+	{
+		session_start();
+		$this->input->set_cookie("username","",time()-1);
+		$this->input->set_cookie("auth","",time()-1);
+		session_destroy();
+		exit('<script>alert("已成功退出");location="../../../../index.php"</script>');
 	}
 }

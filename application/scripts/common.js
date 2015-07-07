@@ -80,9 +80,9 @@ $(function(){
                 }
             },function(data){
                 alert(data)
-                if(data=="注册成功,请进行登录")
+                if(data!="注册失败")
                 {
-                    location=location;
+                    window.location="../../../../index.php";
                 }
             })
         }

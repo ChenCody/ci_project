@@ -29,5 +29,12 @@ class common extends CI_Model
 	  	$flag=$this->db->query($sql,array($username,$password,$email,$intercoin));
 	  	return $flag;
 	  }
+	  function get($username)
+	  {
+	  	$this->load->database();
+	  	$sql="select * from hifi_web.hifi_user where username=?";
+	  	$flag=$this->db->query($sql,$username)->row();
+	  	return $flag;
+	  }
 }
 ?>
